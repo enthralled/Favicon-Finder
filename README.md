@@ -12,5 +12,7 @@ Users input a query into the search bar. On submit, an AJAX call is triggered (h
 Instructions to deploy on your local machine:
 1. Clone the repo into a directory of your choosing.
 2. cd into the new directory (by default, 'Favicon-Finder').
-3. run 'python manage.py runserver' from the command line.
-4. go to localhost:8000 in your browser (note that I used Chrome throughout the development process) and you should be good to go.
+3. To setup the DB (MySQL), create a database called Favicon in MySQL (note that it doesn't necessarily need to be given that name; this is just going off of the DB settings already present in the settings.py file). Similarly, update the username and password in the settings.py file for your local copy of MySQL.
+4. set up the requisite tables, run migrations (python manage.py migrate).
+5. run 'python manage.py runserver' from the command line.
+6. go to localhost:8000 in your browser (note that I used Chrome throughout the development process) and you should be good to go.
