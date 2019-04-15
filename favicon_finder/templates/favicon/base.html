@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+{% load static %}
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %} Favicon Finder {% endblock %}</title>
+        <link rel="stylesheet" type="text/css" href="{% static 'favicon/css/index.css' %}">
+    </head>
+    <body>
+        <h1>Favicon Finder</h1>
+        <div class="form_container">
+            <form class="search_form" method="post" id="fav_form">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <input class="search_button" type="submit" value="Submit">
+            </form>
+        </div>
+        <br>
+        <div id="content">
+            <div id="search_result"></div>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="{% static '/favicon/js/Main.js' %}"></script>
+
+    </body>
+</html>

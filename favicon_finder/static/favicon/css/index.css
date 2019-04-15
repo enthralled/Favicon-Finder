@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.form_container {
+  padding: 50px;
+  font-size: 17px;
+  border: 1px white;
+  width: 100%;
+  background: #f1f1f1;
+}
+
+.search_button {
+  float: bottom;
+  width: 20%;
+  padding: 1px;
+  background: #2196F3;
+  color: white;
+  font-size: 15px;
+  border: 1px white;
+  border-left: none;
+  cursor: pointer;
+}
+
+.search_button:hover {
+  background: #0b7dda;
+}

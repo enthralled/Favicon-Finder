@@ -18,5 +18,5 @@ from django.urls import include, path
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('favicon_finder/', include('favicon_finder.urls'))
+    path('', include('favicon_finder.urls'))
 ]
