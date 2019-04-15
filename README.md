@@ -7,6 +7,6 @@ The DB was populated using a script that can be found in favicon_finder/utils. T
 
 Instructions to deploy on your local machine:
 1. Clone the repo into a directory of your choosing.
-2. cd into the new directory (by default, 'Favicon-Finder).
+2. cd into the new directory (by default, 'Favicon-Finder').
 3. run 'python manage.py runserver' from the command line.
 4. go to localhost:8000 in your browser (Note that I used Chrome throughout the development process) and you should be good to go.
