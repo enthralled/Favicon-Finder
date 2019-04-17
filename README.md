@@ -14,8 +14,9 @@ If 'get fresh' is checked off, the service grabs the Favicon from the relevant s
 Instructions to deploy on your local machine:
 1. Clone the repo into a directory of your choosing.
 2. cd into the new directory (by default, Favicon-Finder).
-3. To setup the DB (MySQL), create a database called 'favicon' in MySQL (note that it doesn't necessarily need to be given that name; this is just going off of the DB settings already present in the settings.py file). Similarly, update the username and password in the settings.py file for your local MySQL instance.
-4. Set up the requisite tables by running migrations against the DB (python manage.py migrate).
-5. OPTIONAL: load the data from favicon_data.json (~207k rows) into the DB (python manage.py loaddata favicon_data.json). Note that I personally have not attempted this, so this may not work as intended.
-6. run 'python manage.py runserver' from the command line.
-7. go to localhost:8000 in your browser (note that I used Chrome throughout the development process) and you should be good to go.
+3. pip install dependencies in requirements.txt into a virtualenv and activate.
+4. To setup the DB (MySQL), create a database called 'favicon' in MySQL (note that it doesn't necessarily need to be given that name; this is just going off of the DB settings already present in the settings.py file). Similarly, update the username and password in the settings.py file for your local MySQL instance.
+5. Set up the requisite tables by running migrations against the DB (python manage.py migrate).
+6. OPTIONAL: load the data from favicon_data.json (~207k rows) into the DB (python manage.py loaddata favicon_data.json). Note that I personally have not attempted this, so this may not work as intended.
+7. run 'python manage.py runserver' from the command line.
+8. go to localhost:8000 in your browser (note that I used Chrome throughout the development process) and you should be good to go.
