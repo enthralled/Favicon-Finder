@@ -79,9 +79,9 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': os.path.join(BASE_DIR, 'db.mysql'),
         'OPTIONS': {
-            'database': 'favicon',
-            'user': 'root',
-            'password': '!Kingkong12@',
+            'database': os.environ['DATABASE'],
+            'user': os.environ['USER'],
+            'password': os.environ['PASSWORD'],
         }
     }
 }
